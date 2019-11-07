@@ -1,4 +1,4 @@
-These are the sample code and installer mentioned in my GPU-Powered Computing for Data Science with R Notebooks on Google Cloud’s AI Platform Notebooks [DC91511] talk at Nvidia GTC 2019
+These are the sample code and installer mentioned in my [GPU-Powered Computing for Data Science with R Notebooks on Google Cloud’s AI Platform Notebooks \[DC91511\]](https://events.rainfocus.com/widget/nvidia/gtcdc19/catalog-short?search=zain) talk at Nvidia GTC 2019
 
 It consists of installation scripts to easily install R on AI Platform Notebooks.  
 
