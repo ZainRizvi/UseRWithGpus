@@ -1,4 +1,4 @@
-# Use R With GPUs
+# Use GPUs with R
 
 These are the sample code and installer mentioned in my [GPU-Powered Computing for Data Science with R Notebooks on Google Cloud’s AI Platform Notebooks \[DC91511\]](https://events.rainfocus.com/widget/nvidia/gtcdc19/catalog-short?search=zain) talk [[recording](https://on-demand.gputechconf.com/gtcdc/2019/video/dc91511-gpu-powered-computing-for-data-science-with-r-notebooks-on-google-clouds-ai-platform/)] at Nvidia GTC 2019. The talk covered various ways to speed up your data analysis for AI and ML workflows, with a focus on optimizing GPU usage
 
