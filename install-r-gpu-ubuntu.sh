@@ -3,7 +3,6 @@
 # Install R
 
 #required by multiple popular R packages
-apt update
 apt install -y \
     libssl-dev \
     libcurl4-openssl-dev \
@@ -20,6 +19,7 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB
 # See https://cran.r-project.org/bin/linux/ubuntu/README.html#secure-apt for more details
 add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/"
 
+apt update
 apt install r-base -y
 
 # Install IRkernel

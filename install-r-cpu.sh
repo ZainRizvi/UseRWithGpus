@@ -3,7 +3,6 @@
 # Install R
 
 #required by multiple popular R packages
-apt update
 apt install -y \
     libssl-dev \
     libcurl4-openssl-dev \
@@ -17,6 +16,7 @@ apt-key adv --keyserver keys.gnupg.net --recv-key 'E19F5F87128899B192B1A2C2AD5F9
 
 add-apt-repository "deb http://cloud.r-project.org/bin/linux/debian stretch-cran35/"
 
+apt update
 apt install r-base -y
 
 # Install IRkernel
