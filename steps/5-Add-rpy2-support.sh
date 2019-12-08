@@ -1,7 +1,8 @@
 #!/bin/bash
 
 function install_pip2_package() {
-    pip2 install --upgrade --upgrade-strategy only-if-needed --force-reinstall "$@" || exit 1
+    # only works if python 2 is actually installed in the container. Else it'll just install as python 3
+    pip install --upgrade --upgrade-strategy only-if-needed --force-reinstall "$@" || exit 1
 }
 
 function install_pip3_package() {
