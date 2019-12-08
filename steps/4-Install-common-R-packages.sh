@@ -50,7 +50,6 @@ OTHER_PACKAGES=( \
    'httpuv' \
    'ggplot2' \
    'devtools' \
-   'xgboost' \
 )
 
 install_r_packages "${OTHER_PACKAGES[@]}"
