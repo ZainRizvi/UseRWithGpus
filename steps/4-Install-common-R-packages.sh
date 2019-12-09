@@ -56,7 +56,7 @@ install_r_packages "${OTHER_PACKAGES[@]}"
 
 if [ "${MODE}" = "GPU" ]; then
   MODE_SPECIFIC_PACKAGES=( \
-   'gpuR' \
+   # 'gpuR' \ # Installation fails witht the error ": ViennaCL: FATAL ERROR: ViennaCL encountered an unknown OpenCL error. Most likely your OpenCL SDK or driver is not installed properly."
   )
 elif [ "${MODE}" = "CPU" ]; then
   MODE_SPECIFIC_PACKAGES=( \
