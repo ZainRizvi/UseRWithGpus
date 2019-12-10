@@ -11,3 +11,22 @@ This blog post describes the installation script in more detail: https://zainriz
 [Watch the talk here](https://on-demand.gputechconf.com/gtcdc/2019/video/dc91511-gpu-powered-computing-for-data-science-with-r-notebooks-on-google-clouds-ai-platform/)
 
 [Slides are available here](https://github.com/ZainRizvi/UseRWithGpus/blob/master/Slides%20-%20R%20with%20GPU.pdf)
+
+# Installation
+
+To use the provided scripts on your AI Platform Notebooks, create a notebook VM and then run one of the below commands based on whether or not your notebook VM has GPUs attached. (Don't like running unknown code from the internet? I explain what they are doing [in this blog post](https://zainrizvi.io/blog/using-gpus-with-r-in-jupyter-lab/))
+
+With CPUs only:
+'sudo -- sh -c 'wget -O - https://raw.githubusercontent.com/ZainRizvi/UseRWithGpus/master/install-r-cpu.sh | bash'
+
+With GPUs:
+'sudo -- sh -c 'wget -O - https://raw.githubusercontent.com/ZainRizvi/UseRWithGpus/master/install-r-gpu.sh | bash'
+
+Now, those scripts take a while to run.  Instead, you can just use the containerized versions of AI Platform Notebooks, which come with Tensorflow 2 support built in.
+
+Here are their repositories on docker hub:
+
+   * zainrizvi/deeplearning-container-tf2-with-r:latest-cpu
+   * zainrizvi/deeplearning-container-tf2-with-r:latest-gpu
+
+And you can use the above custom containers to have a notebook running on AI Platform Notebook in just a couple minutes!
