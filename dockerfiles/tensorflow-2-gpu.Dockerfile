@@ -14,4 +14,5 @@ RUN /steps/2-register-with-r-repository-ubuntu.sh
 RUN /steps/3-Install-R-and-IRkernel.sh
 RUN /steps/4-Install-common-R-packages.sh -m GPU
 RUN /steps/5-Add-rpy2-support.sh
-RUN /steps/6-compile-xgboost-gpu.sh
+RUN /steps/6-Compile-xgboost-gpu.sh
+RUN /steps/7-Install-keras.sh
