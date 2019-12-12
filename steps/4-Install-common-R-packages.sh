@@ -8,8 +8,6 @@ m) MODE=${OPTARG^};;
 esac
 done
 
-IF $MODE
-
 # Install R packages
 
 function install_r_package() {
