@@ -9,9 +9,9 @@ esac
 done
 
 if [ "${MODE}" = "GPU" ]; then
-  python -c 'library(keras); install_keras(tensorflow = "gpu")'
+  Rscript -e  'library(keras); install_keras(tensorflow = "gpu")'
 elif [ "${MODE}" = "CPU" ]; then
-  python -c 'library(keras); install_keras()'
+  Rscript -e  'library(keras); install_keras()'
 else
     echo "Invalid mode specified!"
     exit 1
