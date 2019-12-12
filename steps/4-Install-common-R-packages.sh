@@ -55,6 +55,8 @@ install_r_packages "${OTHER_PACKAGES[@]}"
 if [ "${MODE}" = "GPU" ]; then
   MODE_SPECIFIC_PACKAGES=( \
    # 'gpuR' \ # Installation fails witht the error ": ViennaCL: FATAL ERROR: ViennaCL encountered an unknown OpenCL error. Most likely your OpenCL SDK or driver is not installed properly."
+   # use CPU xgboost for now until better option is found
+   'xgboost' \
   )
 elif [ "${MODE}" = "CPU" ]; then
   MODE_SPECIFIC_PACKAGES=( \
@@ -84,3 +86,4 @@ mkdir -p "${R_LIBS_USER}"
 EOF
 
 chmod +x "${R_LIB_SETUP}"
+
