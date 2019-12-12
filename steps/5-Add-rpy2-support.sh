@@ -1,17 +1,7 @@
 #!/bin/bash
 
-function install_pip2_package() {
-    # only works if python 2 is actually installed in the container. Else it'll just install as python 3
-    pip install --upgrade --upgrade-strategy only-if-needed --force-reinstall "$@" || exit 1
-}
-
-function install_pip3_package() {
-    pip3 install --upgrade --upgrade-strategy only-if-needed --force-reinstall "$@" || exit 1
-}
-
 function install_pip_package() {
-    install_pip2_package "$1"
-    install_pip3_package "$1"
+    pip install --upgrade --upgrade-strategy only-if-needed --force-reinstall "$@" || exit 1
 }
 
 # Install rpy2
@@ -25,4 +15,4 @@ function install_pip_package() {
 
 install_pip_package tzlocal # required by rpy2
 # 3.0.5 is the last version that works with Python 3.5
-install_pip3_package rpy2==3.0.5 # Code in both Python & R at the same time
+install_pip_package rpy2==3.0.5 # Code in both Python & R at the same time
