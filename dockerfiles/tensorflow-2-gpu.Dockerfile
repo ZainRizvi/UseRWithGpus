@@ -1,4 +1,4 @@
-FROM gcr.io/deeplearning-platform-release/tf2-cpu
+FROM gcr.io/deeplearning-platform-release/tf2-gpu
 
 LABEL maintainer="Zain  Rizvi"
 
